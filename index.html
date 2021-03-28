@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Todo List</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+   <header class="header">
+      <div class="container">
+         <div class="header__inner">
+            <a class="logo" href="#">
+               <svg class="logo__icon">
+                  <use href="images/logo.svg#logo"></use>
+               </svg>
+            </a>
+            <a href="#" class="user">
+               <svg class="user__icon">
+                  <use href="images/user.svg#user"></use>
+               </svg>
+            </a>
+         </div>
+      </div>
+   </header>
+   <section class="main">
+      <div class="container">
+         <div class="main__inner">
+            <h1 class="main__title">Todo List</h1>
+            <form action="" class="main__form">
+               <input type="text" class="main__input" required>
+               <button class="main__button" type="submit">
+                  <svg class="main__icon">
+                     <use href="images/plus.svg#plus"></use>
+                  </svg>
+               </button>
+               <div class="main__select">
+                  <select name="todos" id="todosFilter" class="main__filter">
+                     <option value="all" selected>All</option>
+                     <option value="completed">Completed</option>
+                     <option value="uncompleted">Uncompleted</option>
+                  </select>
+               </div>
+            </form>
+         </div>
+      </div>
+   </section>
+   <section class="list">
+      <div class="container">
+         <div class="list__inner">
+            <ul class="list__items"></ul>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+            <div class="footer__copyright">© t, 2021</div>
+         </div>
+      </div>
+   </footer>
+
+
+
+
+   <script src="script.js"></script>
+</body>
+</html>
